@@ -1,0 +1,38 @@
+.section-links {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.tree-logo {
+  height: 8.2rem;
+  width: auto;
+  padding-bottom: 2.4rem;
+}
+
+.links-order {
+  flex-direction: column;
+  text-align: center;
+}
+
+.link-element:link,
+.link-element:visited {
+  display: block;
+  color: #fff;
+  font-size: 3.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "queering-regular";
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.link-element:hover,
+.link-element:active {
+  border-bottom: 2px solid #fff;
+}
