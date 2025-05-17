@@ -1,0 +1,354 @@
+/* main-nav */
+
+.main-header {
+  display: flex;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9997;
+  width: 100%;
+}
+
+.main-logo {
+  display: flex;
+  align-self: center;
+  width: 15rem;
+  height: auto;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.main-nav-list a:link,
+.main-nav-list a:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "queering-regular", sans-serif;
+  font-size: 4.8rem;
+  text-decoration: none;
+  transition: border 0.1s;
+  border: 1px solid transparent;
+}
+
+.main-nav-list a:hover,
+.main-nav-list a:active {
+  border-bottom: 1px solid #fff;
+}
+
+.list-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.main-nav-list::after {
+  display: block;
+  content: "";
+  color: #fff;
+  width: 15rem;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  transition: all 1s;
+  color: #fff;
+}
+
+/* section-hero */
+
+.section-hero {
+  background: url(../img/defugahero.webp);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68%;
+}
+
+.section-header {
+  font-size: 14rem;
+  text-align: center;
+  color: #fff;
+  font-family: "queering-bold", sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.sub-header {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #fff;
+  font-family: "space mono", sans-serif;
+}
+
+/* about-us */
+
+.about-us-section {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url(../img/fondodefuga.webp);
+  background-size: cover;
+}
+
+.grid--4-cols-about-us {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+.text-about-us {
+  align-self: end;
+  grid-column: 1;
+  padding-bottom: 4rem;
+  color: #212121;
+  justify-self: center;
+}
+
+.text-about-us-title {
+  font-size: 7.2rem;
+  font-family: "queering-bold", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.text-about-us-content {
+  font-family: "space mono", sans-serif;
+  font-size: 2rem;
+}
+
+.img-about-us {
+  grid-column: 2;
+  align-self: center;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap--team {
+  row-gap: 2.6rem;
+}
+
+.img-container {
+  overflow: hidden;
+  align-self: center;
+  position: relative;
+  height: 13.8rem;
+  width: 13.7rem;
+  border-radius: 50%;
+}
+
+.team-photo {
+  width: 15.4rem;
+  height: 19.3rem;
+  position: absolute;
+  left: 55%;
+  top: 69%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);
+  transition: all 0.6s;
+}
+
+.team-photo:hover {
+  filter: grayscale(0);
+}
+
+.team-description,
+.team-occupation {
+  display: block;
+  text-align: center;
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.7rem;
+}
+
+.team-description {
+  letter-spacing: -1px;
+}
+
+.team-occupation {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Space Mono", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+/* our servicess */
+
+.our-services-section {
+  background-color: #212121;
+}
+
+.services-container {
+  display: flex;
+}
+
+.our-services-header {
+  color: #fff;
+  font-family: "queering-bold", sans-serif;
+  font-size: 8.2rem;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  padding-top: 5.6rem;
+  letter-spacing: 4px;
+}
+
+.services-list {
+  display: flex;
+  padding: 12rem 0;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-around;
+  gap: 3.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  top: 60%;
+  left: 50%;
+}
+
+.service-element {
+  background-color: #fff;
+  height: 7.1rem;
+  width: 7.1rem;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: 5.6rem;
+}
+
+.service-name {
+  color: #fff;
+  font-family: "space mono", sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* our filosofy section */
+
+.our-filosofy-section {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url(../img/fondodefuga.webp);
+  background-size: cover;
+}
+
+.filosofy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.filosofy-text-container {
+  align-self: end;
+  padding-bottom: 2.2rem;
+}
+
+.filosofy-title {
+  text-transform: uppercase;
+  font-size: 9rem;
+  font-family: "queering-bold", sans-serif;
+  letter-spacing: 4px;
+  text-align: end;
+  padding-top: 14.4rem;
+}
+
+.filosofy-text {
+  text-align: end;
+  font-size: 1.6rem;
+  font-family: "space mono", sans-serif;
+}
+
+/* contact us */
+
+.contact-us-section {
+  background-color: #212121;
+}
+
+.contact-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-us-message {
+  color: #fff;
+  font-size: 3.8rem;
+  font-family: "space mono", sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: 32rem;
+}
+
+.contact-data-container {
+  align-self: end;
+  justify-content: end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.6rem;
+}
+
+.contact-list {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-img-a {
+  padding: 0;
+}
+
+.footer-img {
+  grid-column: 2/3;
+  height: 9.6rem;
+  width: auto;
+  justify-self: end;
+}
+
+.contact-list a {
+  display: block;
+}
+
+.icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: rgb(55, 55, 51);
+  transition: all 0.4s;
+}
+
+.icon-ig {
+  height: 6rem;
+  width: auto;
+  color: rgb(55, 55, 51);
+  transition: all 0.4s;
+}
+
+.icon:hover,
+.icon:active {
+  cursor: pointer;
+}
